@@ -11,7 +11,7 @@ For Ubuntu-Server:
 ```
 sudo apt-get update
 uname -r
-sudo apt-get install linux-headers-$(uname -r) build-essential openssl-dev
+sudo apt-get install linux-headers-$(uname -r) build-essential libssl-dev
 ```
 and the name of openssl-dev are for Red Hat, Fedora, CentOS: openssl-devel, for Debian, Ubuntu: libssl-dev, for Arch: openssl.
 
