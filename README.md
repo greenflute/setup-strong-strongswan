@@ -7,6 +7,14 @@
 
 This script doesn't need a domain or specific public IP to work.
 
+For Ubuntu-Server:
+```
+sudo apt-get update
+uname -r
+sudo apt-get install linux-headers-$(uname -r) build-essential openssl-dev
+```
+and the name of openssl-dev are for Red Hat, Fedora, CentOS: openssl-devel, for Debian, Ubuntu: libssl-dev, for Arch: openssl.
+
 ```
 curl -L -O https://raw.github.com/philplckthun/setup-strong-strongswan/master/setup.sh
 chmod +x setup.sh
